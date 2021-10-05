@@ -3,15 +3,12 @@ from PIL import Image
 class Document:
 	file = ' '
 	file_out = ' '
-	sig_width = 0
-	sig_height = 0
+	sig_width = 170
+	sig_height = 30
 	def __init__(self, file, file_out):
 		self.file = file
 		self.file_out = file_out
 	
-	def signatureSize(self, sig_width, sig_height):
-		self.sig_width = sig_width
-		self.sig_height = sig_height
 
 	def signDocs(self, x_pos, y_pos):
 
